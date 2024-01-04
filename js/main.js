@@ -1,5 +1,12 @@
 // Step #1 - Your game is going to play against the computer, so begin with a function called getComputerChoice that will randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’.
 
+function getComputerChoice() {
+  const choices = ["Rock", "Paper", "Scissors"];
+  let num = Math.floor(Math.random() * 3);
+  console.log(num);
+  return choices(num);
+}
+
 // Step #2 - Write a function that plays a single round of Rock Paper Scissors. The function should take two parameters - the playerSelection and computerSelection - and then return a string that declares the winner of the round like so: "You Lose! Paper beats Rock"
 
 // Bonus Points: Make your function’s playerSelection parameter case-insensitive.
